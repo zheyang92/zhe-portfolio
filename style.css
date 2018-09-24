@@ -1,0 +1,85 @@
+header {
+  color: #464646;
+  background-color: #f7a5c9;
+  padding: 10px; 
+  position: absolute;
+  left:0;
+}
+.navPage {
+  background-image: url("./src/tshirtbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: auto;
+  height: 800px;
+  color:red;
+}
+
+.imageLink {
+  display: flex;
+  justify-content: center;
+}
+
+#imgSrc {
+  width: 250px;
+  height: 100px;
+  margin-top: 250px;
+  border-radius: 10px;
+}
+
+.nextPicBtn {
+  height: 50px;
+  width: 60px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  border: 2px solid grey;
+  background: #464646;
+  margin-left:230px;
+  margin-top: 480px; 
+}
+.prevPicBtn {
+  height: 50px;
+  width: 60px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  border: 2px solid grey;
+  background: #464646;
+  margin-right:230px;
+  margin-top: 480px; 
+}
+
+.nextPicBtn:hover{
+  background: red;
+}
+
+.prevPicBtn:hover{
+  background: red;
+}
+
+.aboutMe {
+  background:#A9B2AB;
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+}
+.project {
+  background:#AAA8B2;
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+}
+.contactMe {
+  background:#B2ACA4;
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+footer {
+  color: black;
+  bottom: 0;
+
+}

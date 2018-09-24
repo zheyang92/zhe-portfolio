@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Zhe's Portfolio</title>
+  <script>
+    const pictureArray = ["./src/aboutme.png", "./src/project.png", "./src/contact.png"];
+    let index = 0;
+    function nextPic() {
+      index = index + 1;
+      if (index === pictureArray.length) {
+        index = 0;
+      }
+      const changePic = document.getElementById("imgSrc");
+      changePic.src = pictureArray[index];
+    }
+    function prevPic() {
+      index = index - 1;
+      if (index < 0) {
+        index = pictureArray.length - 1;
+      }
+      const changePic = document.getElementById("imgSrc");
+      changePic.src = pictureArray[index];
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>SupreZhe</h1>
+  </header>
+  <main>
+    <div class="navPage">
+      <div class="imageLink">
+        <button class="prevPicBtn" onclick="prevPic()">Previous</button>
+        <a href="#"><img id="imgSrc" src="./src/aboutme.png"></a>
+        <button class="nextPicBtn" onclick="nextPic()">Next</button>
+      </div>
+    </div>
+    <div class="aboutMe">About me</div>
+    <div class="project">Project</div>
+    <div class="contactMe">Contact</div>
+  </main>
+  <footer>&copy; 2018 ZHE YANG All rights reserved.</footer>
+</body>
+
+</html>

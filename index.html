@@ -10,14 +10,28 @@
   <script>
     const pictureArray = ["./src/aboutme.png", "./src/project.png", "./src/contact.png"];
     let index = 0;
+
     function nextPic() {
       index = index + 1;
-      if (index === pictureArray.length) {
+      if (index == pictureArray.length) {
         index = 0;
       }
-      const changePic = document.getElementById("imgSrc");
+      let changePic = document.getElementById("imgSrc");
       changePic.src = pictureArray[index];
+      let changeLink = document.getElementById("imgLink")
+
+      if (index === 0) {
+        changeLink.href = "#aboutMe";
+      }
+      else if (index === 1) {
+        changeLink.href = "#project";
+      }
+      else if (index == 2) {
+        changeLink.href = "#contactMe";
+      }
     }
+
+
     function prevPic() {
       index = index - 1;
       if (index < 0) {
@@ -25,7 +39,22 @@
       }
       const changePic = document.getElementById("imgSrc");
       changePic.src = pictureArray[index];
+
+
+      let changeLink = document.getElementById("imgLink")
+
+      if (index === 0) {
+        changeLink.href = "#aboutMe";
+      }
+      else if (index === 1) {
+        changeLink.href = "#project";
+        console.log('index = 1')
+      }
+      else if (index == 2) {
+        changeLink.href = "#contactMe";
+      }
     }
+
   </script>
 </head>
 
@@ -37,13 +66,13 @@
     <div class="navPage">
       <div class="imageLink">
         <button class="prevPicBtn" onclick="prevPic()">Previous</button>
-        <a href="#"><img id="imgSrc" src="./src/aboutme.png"></a>
+        <a id="imgLink" href="#aboutMe"><img id="imgSrc" src="./src/aboutme.png"></a>
         <button class="nextPicBtn" onclick="nextPic()">Next</button>
       </div>
     </div>
-    <div class="aboutMe">About me</div>
-    <div class="project">Project</div>
-    <div class="contactMe">Contact</div>
+    <div id="aboutMe">About me</div>
+    <div id="project">Project</div>
+    <div id="contactMe">Contact</div>
   </main>
   <footer>&copy; 2018 ZHE YANG All rights reserved.</footer>
 </body>

@@ -59,23 +59,23 @@ header {
   background: red;
 }
 
-.aboutMe {
+#aboutMe {
   background:#A9B2AB;
   margin-top: 10px;
   width: 100%;
-  height: 200px;
+  height: 400px;
 }
-.project {
+#project {
   background:#AAA8B2;
   margin-top: 10px;
   width: 100%;
-  height: 200px;
+  height: 400px;
 }
-.contactMe {
+#contactMe {
   background:#B2ACA4;
   margin-top: 10px;
   width: 100%;
-  height: 200px;
+  height: 400px;
 }
 
 footer {

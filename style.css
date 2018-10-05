@@ -4,6 +4,7 @@ header {
   padding: 10px; 
   position: absolute;
   left:0;
+  font-family: 'Monoton', cursive;
 }
 .navPage {
   background-image: url("./src/tshirtbackground.png");
@@ -20,7 +21,7 @@ header {
 }
 
 #imgSrc {
-  width: 250px;
+  width: 300px;
   height: 100px;
   margin-top: 250px;
   border-radius: 10px;
@@ -60,26 +61,86 @@ header {
 }
 
 #aboutMe {
-  background:#A9B2AB;
+  background:white;
   margin-top: 10px;
   width: 100%;
-  height: 400px;
+  height: 800px;
+  font-family: 'Philosopher', sans-serif;
 }
 #project {
   background:#AAA8B2;
   margin-top: 10px;
   width: 100%;
-  height: 400px;
+  height: 700px;
+  border-radius: 15px;
 }
+.project-title{
+  margin-left: 10px;
+}
+
+.project-img {
+  height: 250px;
+  width: auto;
+  border: 4px solid white;
+  border-radius: 0.5em;
+  margin: 20px;
+}
+
 #contactMe {
   background:#B2ACA4;
   margin-top: 10px;
   width: 100%;
-  height: 400px;
+  height: 170px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 45px/15px;
+}
+
+.githubPic {
+  width:80px;
+  height: auto;
+  margin: 40px;
+}
+
+.linkedinPic {
+  width:60px;
+  height: auto;
+  margin: 50px;
+}
+
+.emailLink {
+  margin: 50px;
+  text-decoration:none;
+}
+
+.introduce-me {
+  font-size: 30px;
+  width: 500px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.my-pic-container {
+  width: 186px;
+  height: 186px;
+  margin: 40px auto;
+
+}
+.my-pic {
+  width: 100%;
+  height:100%;
+  border-radius: 25%;
+}
+
+.emailLink {
+  font-family: 'Philosopher', sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 60px 20px;
+  color: #23a3b3
 }
 
 footer {
   color: black;
   bottom: 0;
-
 }
